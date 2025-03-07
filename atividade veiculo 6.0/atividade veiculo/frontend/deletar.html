@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dleetar/editar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <button id="buscar">Buscar:</button>
+        <button id="cadastrar">Cadastrar:</button>
+        <script>
+      
+            const botao = document.getElementById('buscar');
+            const botao2 = document.getElementById('cadastrar');
+          
+            
+            botao.addEventListener('click', () => {
+             
+              window.location.href = 'listar.html';
+            });
+            botao2.addEventListener('click', () => {
+             
+             window.location.href = 'index.html';
+           });
+          </script>
+    </header>
+
+    <main>
+        <div id="pesquisaPlaca">
+            <h2>ATENÇÃO! O veiculo sera excluido</h2>
+            <input id="placaBusca" type="text" placeholder="Digite a placa">
+          <button id="deletar">Excluir</button>
+     </div>
+          <div id="formulario2">
+
+            <h2>digite a placa que sera editada</h2>
+            <input id="placaBusca2" type="text" placeholder="Digite a placa">
+     
+            <input id="placaNova" type="text" placeholder="digite a nova placa ">
+          <button id="editar">editar</button>
+          </div>
+
+    </main>
+    <script src="./deletar.js"></script>
+</body>
+</html>

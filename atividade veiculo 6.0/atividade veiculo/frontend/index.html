@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <button id="buscar">Buscar:</button>
+        <button id="deletar">Deletar/editar:</button>
+        <script>
+      
+            const botao = document.getElementById('buscar');
+            const botao2 = document.getElementById('deletar');
+          
+            
+            botao.addEventListener('click', () => {
+             
+              window.location.href = 'listar.html';
+            });
+            botao2.addEventListener('click', () => {
+             
+             window.location.href = 'deletar.html';
+           });
+          </script>
+    </header>
+
+    <main>
+        <div id="formulario" >
+            <input id="placa" type="text" placeholder="Placa:" color:>
+            <input id="cor" type="text" placeholder="Cor:">
+            <input id="modelo" type="text" placeholder="Modelo:">
+            <input id="dono" type="text" placeholder="Dono:">
+        </div>
+
+        <button id="cadastrar">Cadastrar</button>
+        
+    </main>
+    <script src="./cadastro.js"></script>
+</body>
+</html>
